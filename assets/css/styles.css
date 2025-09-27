@@ -35,7 +35,7 @@ p {
 }
 
 #welcome {
-  height: 50rem;
+  height: 40rem;
   width: auto;
   background: url(../images/peakpx.jpg) no-repeat center center/cover;
   background-color: var(--secondary-color);
