@@ -48,6 +48,11 @@ p {
   color: var(--light-highlight-color);
 }
 
+.card-img-top {
+  height: 20rem;
+  width: auto;
+}
+
 .centred-header-text {
   background-color: var(--soft-primary-color);
   position: absolute;
