@@ -4,8 +4,8 @@
 :root {
   --primary-font: "Lato", sans-serif;
   --secondary-font: "Cookie", serif;
-  --primary-color: #a31621;
-  --secondary-color: #52b788;
+  --primary-color: #450707;
+  --secondary-color: #0e1e31;
   --deep-blue-color: #416a8e;
   --light-highlight-color: #fdfffc;
   --black-color: #020100;
@@ -44,6 +44,12 @@ p {
   background-color: var(--secondary-color);
   position: relative;
   filter: saturate(100%);
+}
+
+#footer {
+  background-color: var(--primary-color);
+  color: var(--light-highlight-color);
+  font-size: 1.1rem;
 }
 
 .header-container {
