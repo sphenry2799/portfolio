@@ -30,6 +30,9 @@ h1 {
   font-family: var(--secondary-font);
 }
 
+h2 {
+  font-family: var(--secondary-font);
+}
 p {
   font-family: var(--primary-font);
 }
@@ -40,6 +43,7 @@ p {
   background: url(../images/peakpx.jpg) no-repeat center center/cover;
   background-color: var(--secondary-color);
   position: relative;
+  filter: saturate(100%);
 }
 
 .header-container {
@@ -51,6 +55,10 @@ p {
 .card-img-top {
   height: 20rem;
   width: auto;
+}
+
+.section {
+  padding-top: 1.5rem;
 }
 
 .centred-header-text {
