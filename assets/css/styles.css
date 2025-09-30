@@ -32,6 +32,7 @@ h1 {
 
 h2 {
   font-family: var(--secondary-font);
+  color: var(--primary-color);
 }
 p {
   font-family: var(--primary-font);
