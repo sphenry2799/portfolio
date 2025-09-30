@@ -63,6 +63,10 @@ p {
   width: auto;
 }
 
+.img-fluid {
+  height: 18rem;
+}
+
 .section {
   padding-top: 1.5rem;
 }
