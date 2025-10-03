@@ -6,7 +6,7 @@
   --secondary-font: "Cookie", serif;
   --primary-color: #450707;
   --secondary-color: #0e1e31;
-  --deep-blue-color: #416a8e;
+  --hover-color: #dbce14;
   --light-highlight-color: #fdfffc;
   --black-color: #020100;
   --soft-primary-color: rgba(163, 22, 33, 0.8);
@@ -36,6 +36,15 @@ h2 {
 }
 p {
   font-family: var(--primary-font);
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--third-color);
 }
 
 #welcome {
@@ -72,8 +81,15 @@ p {
   padding-top: 1.5rem;
 }
 
+.cv {
+  color: var(--secondary-color);
+}
+
+.cv:hover {
+  color: var(--primary-color);
+}
 .centred-header-text {
-  background-color: var(--soft-primary-color);
+  /* background-color: var(--soft-primary-color); */
   position: absolute;
   top: 25%;
   left: 25%;
@@ -81,6 +97,20 @@ p {
   color: var(--light-highlight-color);
   font-size: 2em;
   text-shadow: 1px 1px var(--black-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--light-highlight-color);
+}
+
+.nav-link:hover {
+  color: var(--hover-color);
+}
+
+.nav-link {
+  font-weight: 550;
+  color: var(--light-highlight-color);
 }
 
 /* Social media icons */
@@ -98,9 +128,8 @@ p {
 .social-icons a {
   color: white;
   font-size: 1.2rem;
-  transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: var(--third-color);
+  color: var(--hover-color);
 }
