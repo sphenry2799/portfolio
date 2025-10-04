@@ -108,6 +108,9 @@ a:hover {
   padding-top: 1.5rem;
 }
 
+.card {
+  border: none;
+}
 .cv {
   color: var(--secondary-color);
 }
@@ -118,8 +121,8 @@ a:hover {
 .centred-header-text {
   /* background-color: var(--soft-primary-color); */
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 30%;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: var(--light-highlight-color);
   font-size: 2em;
