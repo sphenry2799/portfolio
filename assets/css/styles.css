@@ -34,6 +34,7 @@ h2 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
 }
+
 p {
   font-family: var(--primary-font);
 }
@@ -48,12 +49,11 @@ a:hover {
 }
 
 #welcome {
-  height: 40rem;
+  height: 37rem;
   width: auto;
   background: url(../images/peakpx.jpg) no-repeat center center/cover;
-  /* background-color: var(--secondary-color); */
+  filter: grayscale(100%);
   position: relative;
-  filter: saturate(100%);
 }
 
 #footer {
@@ -68,9 +68,36 @@ a:hover {
   color: var(--light-highlight-color);
 }
 
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--light-highlight-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--light-highlight-color);
+}
+.contact {
+  color: var(--light-highlight-color);
+}
 .card-img-top {
   height: 20rem;
   width: auto;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+}
+
+.card-title {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
 }
 
 .img-fluid {
