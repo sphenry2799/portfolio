@@ -103,6 +103,10 @@ a:hover {
   height: 18rem;
 }
 
+.img-pic {
+  height: 5rem;
+}
+
 .follow {
   font-size: 1.4rem;
 }
