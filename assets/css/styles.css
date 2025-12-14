@@ -22,7 +22,8 @@
 }
 
 body {
-  font-family: var(--primary-font);
+   background-image: url(../images/background.jpg); 
+   font-family: var(--primary-font);
 }
 
 h1 {
@@ -32,6 +33,7 @@ h1 {
 h2 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
+  text-shadow: 2px 3px 5px #686767;
 }
 
 p {
@@ -80,9 +82,14 @@ a:hover {
 .contact {
   color: var(--light-highlight-color);
 }
+
 .card-img-top {
   height: 20rem;
   width: auto;
+}
+
+.section {
+  background-color: #ffffff;
 }
 
 .intro {
