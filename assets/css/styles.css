@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-family: var(--secondary-font);
-  color: var(--black-color);
+  color: var(--primary-color);
 }
 
 h3 {
@@ -76,7 +76,7 @@ a:hover {
   border: none;
 }
 
-.btn-primary:hover {
+.submit:hover {
   background-color: var(--secondary-color);
   color: var(--light-highlight-color);
 }
@@ -97,7 +97,7 @@ a:hover {
 
 .section {
   background-color: #ffffff;
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
 }
 
 .intro {
@@ -108,7 +108,7 @@ a:hover {
 
 .card-title {
   font-family: var(--secondary-font);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 .copyright {
