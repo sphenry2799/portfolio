@@ -11,7 +11,7 @@
   --black-color: #020100;
   --soft-primary-color: rgba(163, 22, 33, 0.8);
   --transparent-red: rgba(163, 22, 33, 0.4);
-  --soft-blue: rgba(65, 106, 142, 0.5);
+  --soft-blue: rgba(65, 106, 142, 0.8);
 }
 
 /* Global styles */
@@ -22,8 +22,8 @@
 }
 
 body {
-   background-image: url(../images/background.jpg); 
-   font-family: var(--primary-font);
+  background-image: url(../images/background.jpg);
+  font-family: var(--primary-font);
 }
 
 h1 {
@@ -32,12 +32,16 @@ h1 {
 
 h2 {
   font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  text-shadow: 2px 3px 5px #686767;
+  color: var(--black-color);
+}
+
+h3 {
+  font-size: medium;
 }
 
 p {
   font-family: var(--primary-font);
+  color: var(--black-color);
 }
 
 a {
@@ -47,20 +51,6 @@ a {
 
 a:hover {
   color: var(--third-color);
-}
-
-#welcome {
-  height: 37rem;
-  width: auto;
-  background: url(../images/peakpx.jpg) no-repeat center center/cover;
-  filter: grayscale(100%);
-  position: relative;
-}
-
-#footer {
-  background-color: var(--primary-color);
-  color: var(--light-highlight-color);
-  font-size: 1.1rem;
 }
 
 .header-container {
@@ -79,35 +69,51 @@ a:hover {
   background-color: var(--primary-color);
   color: var(--light-highlight-color);
 }
+
+.submit {
+  background-color: var(--light-highlight-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-highlight-color);
+}
+
 .contact {
   color: var(--light-highlight-color);
 }
 
 .card-img-top {
-  height: 20rem;
-  width: auto;
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card-text {
+  color: var(--black-color);
 }
 
 .section {
   background-color: #ffffff;
+  padding-top: 1.5rem;
 }
 
 .intro {
   font-size: 1.5rem;
   font-family: var(--primary-font);
+  color: var(--light-highlight-color);
 }
 
 .card-title {
   font-family: var(--secondary-font);
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .copyright {
   font-size: 0.8rem;
-}
-
-.img-fluid {
-  height: 18rem;
+  color: var(--light-highlight-color);
 }
 
 .img-pic {
@@ -117,13 +123,20 @@ a:hover {
 .follow {
   font-size: 1.4rem;
 }
-.section {
-  padding-top: 1.5rem;
+
+.location {
+  color: var(--light-highlight-color);
 }
 
 .card {
   border: none;
 }
+
+.card-body,
+.card {
+  background-color: var(--light-highlight-color);
+}
+
 .cv {
   color: var(--secondary-color);
 }
@@ -186,6 +199,55 @@ a:hover {
   color: var(--light-highlight-color);
 }
 
+.filter-tabs button {
+  background: none;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--soft-blue);
+  cursor: pointer;
+}
+
+.filter-tabs button.active {
+  color: var(--secondary-color);
+  border-bottom: 1px solid #212529;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-label {
+  width: 10rem;
+  font-size: 0.9rem;
+}
+
+.bar {
+  flex: 1;
+  height: 1rem;
+  background-color: var(--soft-primary-color);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--secondary-color);
+  width: 0;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+.bar-percent {
+  width: 40px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--soft-blue);
+}
+
 /* Social media icons */
 .social-icons {
   display: flex;
@@ -205,4 +267,29 @@ a:hover {
 
 .social-icons a:hover {
   color: var(--hover-color);
+}
+
+#about-section {
+  background-color: var(--light-highlight-color);
+  color: var(--black-color);
+}
+
+#bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#welcome {
+  height: 37rem;
+  width: auto;
+  background: url(../images/peakpx.jpg) no-repeat center center/cover;
+  filter: saturate(40%);
+  position: relative;
+}
+
+#footer {
+  background-color: var(--primary-color);
+  color: var(--light-highlight-color);
+  font-size: 1.1rem;
 }
