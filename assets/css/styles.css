@@ -281,6 +281,10 @@ a:hover {
   gap: 10px;
 }
 
+#experience {
+  background-color: var(--light-highlight-color);
+}
+
 #welcome {
   height: 37rem;
   width: auto;
