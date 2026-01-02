@@ -9,7 +9,7 @@
   --hover-color: #dbce14;
   --light-highlight-color: #fdfffc;
   --black-color: #020100;
-  --soft-primary-color: rgba(163, 22, 33, 0.8);
+  --soft-primary-color: rgba(163, 22, 33, 0.5);
   --transparent-red: rgba(163, 22, 33, 0.4);
   --soft-blue: rgba(65, 106, 142, 0.8);
 }
@@ -185,6 +185,21 @@ a:hover {
   }
 }
 
+button.fill-design { 
+  background-color: var(--primary-color);
+ } 
+/* Warm/Creative */
+
+button.fill-technical { 
+  background-color: var(--secondary-color); 
+} 
+/* Cool/Logic */
+
+button.fill-strategy { 
+  background-color: var(--hover-color);
+} 
+/* Gold/Authority */
+
 .navbar {
   background-color: var(--primary-color);
   color: var(--light-highlight-color);
@@ -199,13 +214,40 @@ a:hover {
   color: var(--light-highlight-color);
 }
 
+/* Base styles for all filter buttons */
 .filter-tabs button {
-  background: none;
-  border: none;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.9rem;
-  color: var(--secondary-color);
-  cursor: pointer;
+    background-color: #f0f0f0; /* Default grey */
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Specific button colors when they have the class */
+button.fill-design { 
+    background-color: var(--primary-color); 
+    color: white; 
+    border-color: var(--primary-color);
+}
+
+button.fill-technical { 
+    background-color: var(--secondary-color); 
+    color: white; 
+    border-color: var(--secondary-color);
+}
+
+button.fill-strategy { 
+    background-color: var(--hover-color); 
+    color: black; 
+    border-color: var(--hover-color);
+}
+
+/* Hover effects */
+.filter-tabs button:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
 }
 
 .filter-tabs button.active {
@@ -233,6 +275,7 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
+
 
 .bar-fill {
   height: 100%;

@@ -1,75 +1,83 @@
 // Data
 const allData = [
-  { label: "Web Design & UI", value: 90, category: "Design" },
-  { label: "CMS & Site Management", value: 85, category: "Technical" },
-  { label: "UX & Collaboration", value: 80, category: "Strategy" },
-  { label: "SEO & Analytics", value: 70, category: "Strategy" },
-  { label: "Performance & Compatibility", value: 75, category: "Technical" },
-  { label: "Visual & Presentation Design", value: 85, category: "Design" },
+  { label: "Frontend Development (Bootstrap/JS)", value: 85, category: "Technical" },
+  { label: "Backend & APIs (Python/Django)", value: 75, category: "Technical" },
+  { label: "UI/UX & Figma Design", value: 90, category: "Design" },
+  { label: "Information Architecture", value: 80, category: "Strategy" },
+  { label: "Stakeholder Management", value: 95, category: "Strategy" },
+  { label: "Visual Communication & Data Viz", value: 85, category: "Design" },
+  { label: "Visual Design & Asset Creation", value: 80, category: "Design" },
 ];
 
 const chartContainer = document.getElementById("bar-chart");
 
-// Render function
 function renderChart(data) {
   chartContainer.innerHTML = "";
-  data.forEach((item) => {
+  data.forEach((item, index) => {
     const barItem = document.createElement("div");
     barItem.className = "bar-item";
-
+    
+    // 1. Create the label
     const label = document.createElement("div");
     label.className = "bar-label";
+    label.id = "label-" + index; // Now 'index' is defined!
     label.textContent = item.label;
 
+    // 2. Create the outer bar container
     const bar = document.createElement("div");
     bar.className = "bar";
+    // Adding ARIA for accessibility
+    bar.setAttribute("role", "progressbar");
+    bar.setAttribute("aria-valuenow", item.value);
+    bar.setAttribute("aria-valuemin", "0");
+    bar.setAttribute("aria-valuemax", "100");
+    bar.setAttribute("aria-labelledby", "label-" + index);
 
+    // 3. Create the inner fill (This was the missing/misplaced part)
     const fill = document.createElement("div");
     fill.className = "bar-fill";
-    fill.style.width = "0%";
+    // Now you can safely add the category class
+    fill.classList.add(`fill-${item.category.toLowerCase()}`);
+    fill.style.width = "0%"; // Start at 0 for animation
 
+    // 4. Create the percentage text
     const percent = document.createElement("div");
     percent.className = "bar-percent";
     percent.textContent = item.value + "%";
 
+    // 5. Append everything in the correct order
     bar.appendChild(fill);
     barItem.appendChild(label);
     barItem.appendChild(bar);
     barItem.appendChild(percent);
     chartContainer.appendChild(barItem);
 
-    // Animate fill
+    // 6. Trigger animation
     setTimeout(() => {
       fill.style.width = item.value + "%";
     }, 50);
   });
 }
 
-// Filters
+// Filter functions to call from your HTML buttons
 function showAll() {
   renderChart(allData);
-  setActive(0);
 }
+
 function filterDesign() {
-  renderChart(allData.filter((i) => i.category === "Design"));
-  setActive(1);
+  const filtered = allData.filter(item => item.category === "Design");
+  renderChart(filtered);
 }
+
 function filterTechnical() {
-  renderChart(allData.filter((i) => i.category === "Technical"));
-  setActive(2);
+  const filtered = allData.filter(item => item.category === "Technical");
+  renderChart(filtered);
 }
+
 function filterStrategy() {
-  renderChart(allData.filter((i) => i.category === "Strategy"));
-  setActive(3);
+  const filtered = allData.filter(item => item.category === "Strategy");
+  renderChart(filtered);
 }
 
-function setActive(index) {
-  document
-    .querySelectorAll("#about-section .filter-tabs button")
-    .forEach((btn, i) => {
-      btn.classList.toggle("active", i === index);
-    });
-}
-
-// Initial render
-showAll();
+// Initial render on page load
+renderChart(allData);
