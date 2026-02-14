@@ -59,15 +59,31 @@ a:hover {
   color: var(--light-highlight-color);
 }
 
-.btn-primary {
+.fa-star {
+  color: rgb(230, 195, 1);
+}
+
+.btn-primary
+ {
   background-color: var(--secondary-color);
   color: var(--light-highlight-color);
   border: none;
 }
 
+.btn-outline-primary {
+  color: var(--secondary-color);
+  border: solid 1px;
+}
+
 .btn-primary:hover {
   background-color: var(--primary-color);
   color: var(--light-highlight-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--light-highlight-color);
+  border-color: var(--primary-color);
 }
 
 .submit {
