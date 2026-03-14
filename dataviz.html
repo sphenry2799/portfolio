@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Sharon Henry | Web Designer"
+    />
+    <meta
+      name="keyswords"
+      content="user, interface, web, design, development, experience, front end"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <title>Sharon Henry | Python Data Visualisations</title>
+  </head>
+<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0S1TV5JHQN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0S1TV5JHQN");
+    </script>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="container">
+    <div class="col-12 col-md-6"></div>
+        <div>
+            <h1 class="mt-5 pt-4">
+                Data Visualisations - Python
+            </h1>
+            <p>Data Vizualisations created with Pandas, Matplotlib and Seaborn</p>
+        </div>
+    </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+            <img src="/assets/data viz/tips_heatmap.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="Heatmap">
+            <div class="card-body">
+                <h5 class="card-title">Heatmap</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="/assets/data viz/tsla_line_plot.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)"alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Line Plot</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="/assets/data viz/histplot_bivariate.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="Histogram">
+            <div class="card-body">
+                <h5 class="card-title">Histogram</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-zoom">
+            <img src="/assets/data viz/violin.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="violin chart">
+            <div class="card-body">
+                <h5 class="card-title">Violin</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-zoom">
+            <img src="/assets/data viz/scatter.webp" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="scatter chart">
+            <div class="card-body">
+                <h5 class="card-title">Scatter</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            </div>
+            </div>
+        </div>
+                <div class="col">
+            <div class="card hover-zoom">
+            <img src="/assets/data viz/boxplot.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="box chart">
+            <div class="card-body">
+                <h5 class="card-title">Box Plot</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+</main>
+    <footer id="footer" class="py-4 mt-auto">
+      <div id="contact" class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="contact display-5 text-center mb-3">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+              <i class="fa-solid fa-envelope"></i>
+            </h2>
+          </div>
+          <div class="col-12 col-md-8">
+            <form
+              id="form"
+              action="https://formcarry.com/s/0ifFG0QiJqq"
+              method="POST"
+              class="row g-3"
+            >
+              <div class="col-12 col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input class="form-control" type="text" name="name" id="name" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" id="button" class="btn btn-primary submit mb-4">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="follow">Follow me</h3>
+            <ul class="list-unstyled social-icons mb-3">
+              <li>
+                <a
+                  href="https://www.sharon-henry.slack.com"
+                  target="_blank"
+                  aria-label="Find me on Slack"
+                >
+                  <i class="fa-brands fa-slack"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com/users/sharonhenry0678"
+                  target="_blank"
+                  aria-label="Follow me on Discord"
+                >
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/sphenry2799"
+                  target="_blank"
+                  aria-label="Find me on Github"
+                >
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sharonphenry"
+                  target="_blank"
+                  aria-label="Follow me on LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+            <p class="location mb-4">
+              <i class="fa-solid fa-location-dot"></i> Based in SE14, London
+            </p>
+            <br />
+            <p class="copyright">
+              <span>&copy;</span> 2026. <span>&#32;</span> Sharon Henry
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/a1caae48e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+function showImage(src) {
+  document.getElementById("modalImage").src = src;
+}
+</script>
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-body text-center">
+        <img id="modalImage" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
