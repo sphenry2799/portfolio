@@ -116,6 +116,16 @@ a:hover {
   /* padding-top: 1.5rem; */
 }
 
+.para {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
 .intro {
   font-size: 1.5rem;
   font-family: var(--primary-font);
