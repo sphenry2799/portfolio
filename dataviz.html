@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio for Sharon Henry | Web Designer"
+      content="Portfolio for Sharon Henry | Web Developer"
     />
     <meta
-      name="keyswords"
-      content="user, interface, web, design, development, experience, front end"
+      name="keywords"
+      content="ui/ux, data, web, responsive, developer, python, front end"
     />
 
     <link
@@ -71,22 +71,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">PyVisuals</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Clients</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-                 <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+               <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
               </li>
             </ul>
           </div>
@@ -96,27 +84,39 @@
 <main class="container section">
     <div class="col-12 col-md-6"></div>
         <div>
-            <h1 class="mt-5 pt-4 title">
+            <h1 class="mt-5 p-2 title">
                PyVisuals
             </h1>
-            <p class="para">Built with Pandas • Matplotlib • Seaborn</p>
+            <div class="fw-normal fs-5 ps-2 mb-4">
+              <div class="d-inline-block">Built with </div> 
+              <div class="d-inline-block">NumPy</div>
+              <div class="d-inline-block">• Pandas</div>
+              <div class="d-inline-block">• Matplotlib</div>
+              <div class="d-inline-block">• Seaborn</div>
+            </div>
+            <a
+                href="assets/docs/portfolio–data-analysis-excel.pdf"
+                class="btn btn-outline-primary mb-3"
+                target="_blank"
+                ><i class="fa-solid fa-download"></i>View my Data Analysis in Excel</a
+              >
         </div>
     </div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
             <div class="card">
-            <img src="/assets/data viz/tips_heatmap.png" class="card-img-top object-fit-cover" style="cursor:pointer"
-       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="Heatmap">
+            <img src="/assets/data viz/heatmap_fx.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="Heatmap - FX">
             <div class="card-body">
-                <h5 class="card-title">Average Restaurant Tips by Gender and Smoking Status</h5>
-                <p class="card-text">A heatmap displays the average restaurant tips across combinations of gender and smoking status, using color intensity to highlight differences and patterns in tipping behavior between the groups.</p>
+                <h5 class="card-title">Global FX Correlation Heatmap</h5>
+                <p class="card-text">This heatmap illustrates the Pearson correlation coefficients ($r$) between 22 major global currencies over a 20-year period (2000–2019), with all rates priced against the U.S. Dollar (USD).</p>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
             <img src="/assets/data viz/tsla_line_plot.png" class="card-img-top object-fit-cover" style="cursor:pointer"
-       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)"alt="...">
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="tesla plot">
             <div class="card-body">
                 <h5 class="card-title">TSLA Stock Price Over Time</h5>
                 <p class="card-text">A time series plot shows how the stock price of Tesla, Inc. changes over time, allowing trends, fluctuations, and overall movement in the stock’s value to be observed across different time periods.</p>
@@ -125,41 +125,41 @@
         </div>
         <div class="col">
             <div class="card">
-            <img src="/assets/data viz/histplot_bivariate.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+            <img src="/assets/data viz/histplot_usd_brazil.png" class="card-img-top object-fit-cover" style="cursor:pointer"
        data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="Histogram">
             <div class="card-body">
-                <h5 class="card-title">Distribution of Math vs Reading Scores</h5>
-                <p class="card-text">A 2D histogram shows the distribution of math scores versus reading scores by grouping data points into bins, highlighting where scores are most concentrated and revealing patterns or correlations between the two variables.</p>
+                <h5 class="card-title">Decade of Currency Depreciation: A Study of the US Dollar vs. Brazilian Real</h5>
+                <p class="card-text">This dataset tracks the historical daily pricing of USD/BRL Futures (Dolfut) over a nearly 10-year period, from January 2014 to March 2023.</p>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card hover-zoom">
-            <img src="/assets/data viz/violin.png" class="card-img-top object-fit-cover" style="cursor:pointer"
-       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="violin chart">
+            <img src="/assets/data viz/precious_metals.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="precious metals">
             <div class="card-body">
-                <h5 class="card-title">Distribution of Reading Scores by Gender</h5>
-                <p class="card-text">A violin plot shows the distribution of reading scores for each gender, allowing comparison of the median, spread, and overall density of scores between male and female students.</p>
+                <h5 class="card-title">Comparison of Forecasted Prices by Date</h5>
+                <p class="card-text">This grouped bar chart provides a side-by-side comparison of the forecasted market prices for Gold, Platinum, and Silver over a seven-week period ending in mid-March 2026.</p>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card hover-zoom">
-            <img src="/assets/data viz/scatter.webp" class="card-img-top object-fit-cover" style="cursor:pointer"
+            <img src="/assets/data viz/scatter_plot_age_vs_mutual_funds.png" class="card-img-top object-fit-cover" style="cursor:pointer"
        data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="scatter chart">
             <div class="card-body">
-                <h5 class="card-title">Math and Reading Scores by Gender and Free Lunch Status</h5>
-                <p class="card-text">A scatter plot displays the relationship between gender and student performance by plotting math and reading scores, while also indicating whether students received free lunch, allowing patterns and differences between groups to be observed.</p>
+                <h5 class="card-title">Relationship Between Age and Mutual Fund Investment Preference by Gender</h5>
+                <p class="card-text">This scatter plot visualizes how investment preferences for Mutual Funds vary across different age groups and genders within the dataset.</p>
             </div>
             </div>
         </div>
                 <div class="col">
             <div class="card hover-zoom">
-            <img src="/assets/data viz/boxplot.png" class="card-img-top object-fit-cover" style="cursor:pointer"
-       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="box chart">
+            <img src="/assets/data viz/matrix_financial_data.png" class="card-img-top object-fit-cover" style="cursor:pointer"
+       data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)" alt="heatmap">
             <div class="card-body">
-                <h5 class="card-title">Writing Scores Comparison Between Males and Females</h5>
-                <p class="card-text">A boxplot compares writing scores between males and females by showing the median, quartiles, and range, making it easy to see differences in central tendency and score variability between the genders.</p>
+                <h5 class="card-title">Inter-Correlation Analysis of Financial Investment Preferences and Age</h5>
+                <p class="card-text">This heatmap provides a comprehensive overview of the relationships between the numerical variables in the dataset, primarily focusing on age and the ratings given to various investment instruments.</p>
             </div>
             </div>
         </div>
@@ -288,4 +288,4 @@ function showImage(src) {
   </div>
 </div>
   </body>
-</html> -->
+</html> 
