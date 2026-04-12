@@ -117,7 +117,7 @@ a:hover {
 }
 
 .intro {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: var(--primary-font);
   color: var(--light-highlight-color);
 }
@@ -170,7 +170,7 @@ a:hover {
   /* background-color: var(--soft-primary-color); */
   position: absolute;
   top: 30%;
-  left: 35%;
+  left: 40%;
   transform: translate(-50%, -50%);
   color: var(--light-highlight-color);
   font-size: 2em;
@@ -178,7 +178,7 @@ a:hover {
 }
 
 .text-wrap {
-  width: 25rem;
+  width: 18rem;
 }
 
 /* Base fade-in style */
