@@ -265,12 +265,6 @@ button.fill-strategy {
   color: var(--black-color);
 }
 
-#bar-chart {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 #experience {
   background-color: var(--light-highlight-color);
 }
