@@ -117,7 +117,7 @@ a:hover {
 }
 
 .intro {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--primary-font);
   color: var(--light-highlight-color);
 }
@@ -169,10 +169,10 @@ a:hover {
   /* background-color: var(--soft-primary-color); */
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 43%;
   transform: translate(-50%, -50%);
   color: var(--light-highlight-color);
-  font-size: 2em;
+  font-size: 2rem;
   text-shadow: 1px 1px var(--black-color);
 }
 
