@@ -37,7 +37,8 @@ h2 {
 }
 
 h3 {
-  font-size: medium;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
 }
 
 p {
