@@ -37,7 +37,6 @@ h2 {
 }
 
 h3 {
-  font-family: var(--secondary-font);
   font-size: 1.6rem;
 }
 
@@ -102,7 +101,6 @@ a:hover {
 .contact {
   color: var(--light-highlight-color);
 }
-
 
 .section {
   background-color: #ffffff;
@@ -179,7 +177,7 @@ a:hover {
 }
 
 .text-wrap {
-  width: 18rem;
+  width: 20rem;
 }
 
 /* Base fade-in style */
