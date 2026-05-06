@@ -161,7 +161,6 @@ a:hover {
   color: var(--secondary-color);
 }
 
-
 .cv:hover {
   color: var(--primary-color);
 }
@@ -177,7 +176,7 @@ a:hover {
 }
 
 .text-wrap {
-  width: 20rem;
+  width: 19rem;
 }
 
 /* Base fade-in style */
